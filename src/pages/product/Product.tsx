@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Container from "../../components/navbar/container/Container";
 import image from "../../assets/wat.png";
+import Button from "../../components/button/Button";
 
 function Product() {
     const params=useParams();
@@ -15,7 +16,9 @@ function Product() {
                     <div className=" col-span-2 p-4">
                 <img className="rounded" src={image} alt="" />
                 <div>
-                    <button>Add to Cart</button>
+                   <Button onClick={()=>{ alert("Here")}}>
+                    Add to Cart
+                    </Button>
                 </div>
                 </div>
                 <div className=" col-span-10 p-4">
