@@ -12,16 +12,16 @@ export default Button;
  
 function checkVariant(variant?:TVariant)
 {
-  if(variant="primary"){
+  if(variant==="primary"){
     return{backgroundColor:"blue" ,color:"white"}
   }
-  else if(variant="secondary"){
+  else if(variant==="secondary"){
     return{backgroundColor:"green" ,color:"white"}
   }
-  else if(variant="danger"){
+  else if(variant==="danger"){
     return{backgroundColor:"red" ,color:"white"}
   }
-  else if(variant="success"){
+  else if(variant==="success"){
     return{backgroundColor:"gray" ,color:"white"}
   }
 }

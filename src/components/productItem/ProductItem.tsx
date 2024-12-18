@@ -1,19 +1,21 @@
 import React from "react";
 import image from "../../assets/wat.png";
- function ProductItem()
+import { Products } from "../../types/server";
+
+type TProductItem=Products
+ function ProductItem({title,price,description,image}:TProductItem)
  {
      return (
          <div className="shadow border rounded">
             <img className="rounded-t" src={image} alt="" />
 
             <div className="flex justify-between px-4 mt-2">
-                <h3>Product Title</h3>
-                <span>55$</span>
+                <h3 className="line-clamp-1 w-10">{title}</h3>
+                <span>{price}$</span>
             </div>
             <div className="px-4 mt-2">
                 <p className="line-clamp-2">
-            CloudConvert converts your image files online. Amongst many others, we support PNG, JPG, GIF, WEBP and HEIC. You can use the options to control image resolution ...
-            ‎PNG to JPG · ‎PNG to WEBP · ‎PNG to PDF · ‎PNG to ICO</p>
+            {description}</p>
             </div>
          </div>
      );

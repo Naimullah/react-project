@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+ npm i axios
+ for calling api
+ 
